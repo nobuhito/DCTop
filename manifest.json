@@ -1,0 +1,23 @@
+{
+"name": "DCTop",
+"version": "1.1",
+"description": "ダブルクリックでページトップに移動します",
+"homepage_url": "https://plus.google.com/b/112102646198561777507/",
+"icons": {
+    "128": "icon128.png",
+    "48": "icon48.png"
+},
+"content_scripts": [
+    {
+        "js": [
+            "DCTop.js"
+        ],
+        "matches": [
+            "http://*/*",
+            "https://*/*"
+        ],
+        "all_frames": true
+    }
+],
+    "manifest_version": 2
+}
